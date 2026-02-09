@@ -3,15 +3,17 @@ package middlewares
 import (
 	"errors"
 	"fmt"
-	"github.com/labstack/echo/v4"
 	"html2pdf/internal/response"
 	"net/http"
 	"runtime/debug"
+
+	"github.com/labstack/echo/v4"
 )
 
 type RecoveryMiddleware struct {
 }
 
+// @inject
 func NewRecoveryMiddleware() *RecoveryMiddleware {
 	return &RecoveryMiddleware{}
 }

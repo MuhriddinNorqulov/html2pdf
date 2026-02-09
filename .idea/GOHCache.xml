@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GoORMHelperCache">
+    <option name="schemaMapping">
+      <map>
+        <entry key="App">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/app.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="PdfConverter">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/converter/pdf_converter.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="PdfConverterImpl">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/converter/pdf_converter.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RecoveryMiddleware">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/middlewares/recovery_middleware.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Request">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/schema/request.go" />
+              <option value="file://$PROJECT_DIR$/internal/validator/schema.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="RequestValidator">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/validator/request_validator.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="Response">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/response/response.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="ResponseMiddleware">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/middlewares/response_middleware.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="wkStream">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/converter/pdf_converter.go" />
+            </set>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="scannedPathMapping">
+      <map>
+        <entry key="file://$PROJECT_DIR$/cmd/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770634665819" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/di/wire/wire.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770634348766" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/app.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770634665826" />
+              <option name="schema">
+                <list>
+                  <option value="App" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/converter/pdf_converter.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770634135707" />
+              <option name="schema">
+                <list>
+                  <option value="PdfConverter" />
+                  <option value="wkStream" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/echo.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770634362410" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/middlewares/recovery_middleware.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770630982908" />
+              <option name="schema">
+                <list>
+                  <option value="RecoveryMiddleware" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/middlewares/response_middleware.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770630826564" />
+              <option name="schema">
+                <list>
+                  <option value="ResponseMiddleware" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/response/response.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770629580755" />
+              <option name="schema">
+                <list>
+                  <option value="Response" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/schema/request.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770629580755" />
+              <option name="schema">
+                <list>
+                  <option value="Request" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/validator/request_validator.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770629983930" />
+              <option name="schema">
+                <list>
+                  <option value="RequestValidator" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/validator/schema.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770631958022" />
+              <option name="schema">
+                <list>
+                  <option value="Request" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/validator/validator.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770629580755" />
+            </ScannedPath>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="tableStructMapping">
+      <map>
+        <entry key="app" value="App" />
+        <entry key="pdf_converter" value="PdfConverter" />
+        <entry key="pdf_converter_impl" value="PdfConverterImpl" />
+        <entry key="recovery_middleware" value="RecoveryMiddleware" />
+        <entry key="request" value="Request" />
+        <entry key="request_validator" value="RequestValidator" />
+        <entry key="response" value="Response" />
+        <entry key="response_middleware" value="ResponseMiddleware" />
+        <entry key="wk_stream" value="wkStream" />
+      </map>
+    </option>
+    <option name="lastTimeChecked" value="1770629605340" />
+  </component>
+</project>

@@ -2,12 +2,14 @@ package internal
 
 import (
 	"fmt"
-	"github.com/go-playground/validator/v10"
-	"github.com/labstack/echo/v4"
 	"html2pdf/internal/response"
 	myvalidator "html2pdf/internal/validator"
+
+	"github.com/go-playground/validator/v10"
+	"github.com/labstack/echo/v4"
 )
 
+// @inject
 func NewEcho() *echo.Echo {
 	e := echo.New()
 	e.Validator = myvalidator.NewRequestValidator(validator.New())

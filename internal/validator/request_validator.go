@@ -1,8 +1,9 @@
 package validator
 
 import (
-	"github.com/go-playground/validator/v10"
 	"html2pdf/internal/response"
+
+	"github.com/go-playground/validator/v10"
 )
 
 type RequestValidator struct {
