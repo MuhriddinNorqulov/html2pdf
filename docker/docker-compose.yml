@@ -1,14 +1,12 @@
 services:
   app:
-    build:
-      context: ..
-      dockerfile: docker/Dockerfile
+    image: muxriddindevops/wkhtml2pdf-ass:latest
     container_name: html2pdf
     ports:
       - "8700:8700"
     restart: unless-stopped
     healthcheck:
-      test: [ "CMD", "wget", "-qO-", "http://localhost:87000/health" ]
+      test: [ "CMD", "wget", "-qO-", "http://localhost:8700/health" ]
       interval: 10s
       timeout: 2s
       retries: 3
