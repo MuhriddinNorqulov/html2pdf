@@ -88,7 +88,7 @@
         <entry key="file://$PROJECT_DIR$/internal/app.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1770634665826" />
+              <option name="lastModified" value="1770636174491" />
               <option name="schema">
                 <list>
                   <option value="App" />
@@ -113,7 +113,7 @@
         <entry key="file://$PROJECT_DIR$/internal/echo.go">
           <value>
             <ScannedPath>
-              <option name="lastModified" value="1770634362410" />
+              <option name="lastModified" value="1770636159861" />
             </ScannedPath>
           </value>
         </entry>
