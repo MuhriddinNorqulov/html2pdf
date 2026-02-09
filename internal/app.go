@@ -41,12 +41,17 @@ func (this *App) Handle(c echo.Context) error {
 	return c.Stream(200, "application/pdf", r)
 }
 
+func (this *App) HealthCheck(c echo.Context) error {
+	return c.NoContent(200)
+}
+
 func (this *App) Init() {
 
 	this.echo.Use(this.responseMiddleware.Call)
 	this.echo.Use(this.recoveryMiddleware.Call)
 
 	this.echo.POST("/to-pdf", this.Handle)
+	this.echo.GET("/health", this.HealthCheck)
 }
 
 func (this *App) Start() {

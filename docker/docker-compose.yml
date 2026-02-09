@@ -6,4 +6,10 @@ services:
     container_name: html2pdf
     ports:
       - "8700:8700"
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "wget", "-qO-", "http://localhost:87000/health" ]
+      interval: 10s
+      timeout: 2s
+      retries: 3
 
