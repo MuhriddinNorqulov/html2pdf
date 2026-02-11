@@ -12,11 +12,24 @@ RUN --mount=type=cache,target=/root/.cache/go-build \
     go build -trimpath -ldflags="-s -w" -o /out/app ./cmd/main.go
 
 
-FROM surnet/alpine-wkhtmltopdf:3.23.2-024b2b2-full
+FROM debian:12-slim
 
 ENV CONTAINER_MODE=1
 
-RUN apk add --no-cache ca-certificates
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends \
+    wkhtmltopdf \
+    fontconfig \
+    fonts-dejavu \
+    fonts-liberation \
+    fonts-noto \
+    fonts-noto-cjk \
+    fonts-noto-color-emoji \
+    ca-certificates \
+    tzdata \
+ && rm -rf /var/lib/apt/lists/* \
+ && fc-cache -f
+
 
 WORKDIR /app
 COPY --from=builder /out/app ./app

@@ -10,14 +10,21 @@
             </set>
           </value>
         </entry>
-        <entry key="PdfConverter">
+        <entry key="Env">
           <value>
             <set>
-              <option value="file://$PROJECT_DIR$/internal/converter/pdf_converter.go" />
+              <option value="file://$PROJECT_DIR$/../etaqriz.uz/src/infrastructure/env/env.go" />
             </set>
           </value>
         </entry>
-        <entry key="PdfConverterImpl">
+        <entry key="Html2PdfGatewayImpl">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../etaqriz.uz/src/infrastructure/gateway/html2pdf_gateway_impl.go" />
+            </set>
+          </value>
+        </entry>
+        <entry key="PdfConverter">
           <value>
             <set>
               <option value="file://$PROJECT_DIR$/internal/converter/pdf_converter.go" />
@@ -34,7 +41,6 @@
         <entry key="Request">
           <value>
             <set>
-              <option value="file://$PROJECT_DIR$/internal/schema/request.go" />
               <option value="file://$PROJECT_DIR$/internal/validator/schema.go" />
             </set>
           </value>
@@ -60,6 +66,13 @@
             </set>
           </value>
         </entry>
+        <entry key="ReviewReportGenerateUseCase">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/../etaqriz.uz/src/core/application/usecases/reportusecases/review_report_generate_usecase.go" />
+            </set>
+          </value>
+        </entry>
         <entry key="wkStream">
           <value>
             <set>
@@ -71,10 +84,60 @@
     </option>
     <option name="scannedPathMapping">
       <map>
+        <entry key="file://$PROJECT_DIR$/../etaqriz.uz/src/core/application/usecases/reportusecases/review_report_generate_usecase.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770812343908" />
+              <option name="schema">
+                <list>
+                  <option value="ReviewReportGenerateUseCase" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../etaqriz.uz/src/infrastructure/env/env.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770812129518" />
+              <option name="schema">
+                <list>
+                  <option value="Env" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/../etaqriz.uz/src/infrastructure/gateway/html2pdf_gateway_impl.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770812211431" />
+              <option name="schema">
+                <list>
+                  <option value="Html2PdfGatewayImpl" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/cmd/app/container.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770634362979" />
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/cmd/main.go">
           <value>
             <ScannedPath>
               <option name="lastModified" value="1770634665819" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/di/wire/provider.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1770634362607" />
             </ScannedPath>
           </value>
         </entry>
@@ -153,18 +216,6 @@
             </ScannedPath>
           </value>
         </entry>
-        <entry key="file://$PROJECT_DIR$/internal/schema/request.go">
-          <value>
-            <ScannedPath>
-              <option name="lastModified" value="1770629580755" />
-              <option name="schema">
-                <list>
-                  <option value="Request" />
-                </list>
-              </option>
-            </ScannedPath>
-          </value>
-        </entry>
         <entry key="file://$PROJECT_DIR$/internal/validator/request_validator.go">
           <value>
             <ScannedPath>
@@ -201,16 +252,18 @@
     <option name="tableStructMapping">
       <map>
         <entry key="app" value="App" />
+        <entry key="env" value="Env" />
+        <entry key="html2_pdf_gateway_impl" value="Html2PdfGatewayImpl" />
         <entry key="pdf_converter" value="PdfConverter" />
-        <entry key="pdf_converter_impl" value="PdfConverterImpl" />
         <entry key="recovery_middleware" value="RecoveryMiddleware" />
         <entry key="request" value="Request" />
         <entry key="request_validator" value="RequestValidator" />
         <entry key="response" value="Response" />
         <entry key="response_middleware" value="ResponseMiddleware" />
+        <entry key="review_report_generate_use_case" value="ReviewReportGenerateUseCase" />
         <entry key="wk_stream" value="wkStream" />
       </map>
     </option>
-    <option name="lastTimeChecked" value="1770629605340" />
+    <option name="lastTimeChecked" value="1770811615551" />
   </component>
 </project>
