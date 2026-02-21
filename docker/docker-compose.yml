@@ -1,6 +1,8 @@
 services:
   app:
-    image: muxriddindevops/wkhtml2pdf-ass:latest
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
     container_name: html2pdf
     ports:
       - "8700:8700"
