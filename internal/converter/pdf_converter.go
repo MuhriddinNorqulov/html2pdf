@@ -32,7 +32,7 @@ func (c *PdfConverter) ConvertStream(
 	for k, v := range params {
 		key := strings.TrimLeft(k, "-") // "--margin-top" -> "margin-top"
 		args = append(args, "--"+key)
-		if v != "" {
+		if v != "" && v != "true" && v != "1" && v != "yes" {
 			args = append(args, v)
 		}
 	}
