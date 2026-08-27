@@ -9,7 +9,8 @@ var wkhtmlQueryAllow = map[string]struct{}{
 	"margin-bottom": {},
 	"margin-left":   {},
 	"margin-right":  {},
-	"dpi":           {},
+	"dpi":                       {},
+	"disable-smart-shrinking":   {},
 }
 
 // WkhtmlParamsFromQuery copies allowlisted keys only when orientation is set.
