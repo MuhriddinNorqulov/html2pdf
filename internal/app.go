@@ -28,10 +28,7 @@ func (this *App) Handle(c echo.Context) error {
 	if err != nil {
 		return err
 	}
-	params := make(map[string]string)
-	for k, v := range c.QueryParams() {
-		params[k] = v[0]
-	}
+	params := WkhtmlParamsFromQuery(c.QueryParams())
 	r, err := this.pdfConverter.ConvertStream(c.Request().Context(), req.Content, params)
 	if err != nil {
 		return echo.NewHTTPError(502, fmt.Sprintf("convert error: %v", err))
