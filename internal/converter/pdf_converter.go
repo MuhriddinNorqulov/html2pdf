@@ -28,14 +28,7 @@ func (c *PdfConverter) ConvertStream(
 	// xohlasangiz tashqaridan timeout bering; bo‘lmasa default:
 	ctx, cancel := context.WithTimeout(ctx, 60*time.Second)
 
-	args := make([]string, 0, len(params)*2+2)
-	for k, v := range params {
-		key := strings.TrimLeft(k, "-") // "--margin-top" -> "margin-top"
-		args = append(args, "--"+key)
-		if v != "" && v != "true" && v != "1" && v != "yes" {
-			args = append(args, v)
-		}
-	}
+	args := wkhtmlArgs(params)
 	args = append(args, "-", "-") // stdin -> stdout
 
 	cmd := exec.CommandContext(ctx, "wkhtmltopdf", args...)
@@ -100,4 +93,35 @@ func (s *wkStream) Close() error {
 	_ = s.r.Close()
 	_ = s.cmd.Wait()
 	return nil
+}
+
+var wkhtmlBoolFlags = map[string]struct{}{
+	"disable-smart-shrinking": {},
+}
+
+func wkhtmlArgs(params map[string]string) []string {
+	args := make([]string, 0, len(params)*2)
+	for k, v := range params {
+		key := strings.TrimLeft(k, "-")
+		if _, boolFlag := wkhtmlBoolFlags[key]; boolFlag {
+			if wkhtmlTruthy(v) {
+				args = append(args, "--"+key)
+			}
+			continue
+		}
+		args = append(args, "--"+key)
+		if v != "" {
+			args = append(args, v)
+		}
+	}
+	return args
+}
+
+func wkhtmlTruthy(v string) bool {
+	switch strings.ToLower(strings.TrimSpace(v)) {
+	case "", "1", "true", "yes", "on":
+		return true
+	default:
+		return false
+	}
 }
