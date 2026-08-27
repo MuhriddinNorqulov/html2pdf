@@ -30,8 +30,8 @@ func TestWkhtmlParamsFromQueryLandscapeAllowlist(t *testing.T) {
 	if _, ok := got["zoom"]; ok {
 		t.Fatal("zoom must be dropped")
 	}
-	if _, ok := got["disable-smart-shrinking"]; ok {
-		t.Fatal("disable-smart-shrinking must be dropped")
+	if _, ok := got["disable-smart-shrinking"]; !ok || got["disable-smart-shrinking"] != "true" {
+		t.Fatalf("got %#v, want disable-smart-shrinking=true", got)
 	}
 }
 
